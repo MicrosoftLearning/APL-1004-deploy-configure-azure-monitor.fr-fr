@@ -15,10 +15,10 @@ lab:
 
 ### Créer un point de terminaison de collecte de données
 
-1. Dans la barre de recherche du Portail Azure, saisissez Moniteur, puis sélectionnez Moniteur dans la liste de résultats.
-1. Sur la page Moniteur, sous Paramètres, sélectionnez Points de terminaison de collecte de données.
-1. Sur la page Points de terminaison de collecte de données, sélectionnez Créer.
-1. Sur la page Créer un point de terminaison de collecte de données, définissez les paramètres suivants, puis sélectionnez Vérifier + Créer.
+1. Dans la barre de recherche du portail Azure, tapez **Moniteur**, puis sélectionnez **Moniteur** dans la liste des résultats.
+1. Dans la page **Moniteur**, sous **Paramètres**, sélectionnez **Points de terminaison de collecte de données**.
+1. Sur la page **Points de terminaison de collecte de données**, sélectionnez **Créer**.
+1. Dans la page Créer un point de terminaison de collecte de données, indiquez les paramètres suivants, puis sélectionnez Examiner et créer.
 
     | Propriété | Valeur    |
     |:---------|:---------|
@@ -27,14 +27,14 @@ lab:
     | Groupe de ressources    | rg-alpha  |
     | Région    | USA Est  |
 
-5. Passez en revue les paramètres, puis sélectionnez Créer.
+5. Passez en revue les paramètres, puis sélectionnez **Créer**.
 
 ### Créer une règle de collecte de données
 
-1. Dans la barre de recherche du Portail Azure, saisissez **Moniteur**, puis sélectionnez **Moniteur** dans la liste de résultats.
-1. Sur la page **Moniteur**, sous **Paramètres**, sélectionnez **Règles de collecte de données**.
-1. Sur la page **Règles de collecte de données**, sélectionnez **Créer**.
-1. Sur la page **Créer une règle de collecte de données**, configurez les paramètres suivants et sélectionnez **Suivant**.
+1. Dans la barre de recherche du portail Azure, tapez **Moniteur**, puis sélectionnez **Moniteur** dans la liste des résultats.
+1. Dans la page **Moniteur**, sous **Paramètres**, sélectionnez **Règles de collecte de données**.
+1. Dans la page **Règles de collecte de données**, sélectionnez **Créer**.
+1. Dans la page **Créer une règle de collecte de données**, configurez les paramètres suivants, puis cliquez sur **Suivant**.
 
     | Propriété | Valeur    |
     |:---------|:---------|
@@ -45,13 +45,13 @@ lab:
     | Type de plateforme | Windows  |
     | Point de terminaison de collecte de données  | IaaSVMCollectionEndpoint   |
 
-5. Sur la page **Ressources**, sélectionnez **Ajouter des ressources**.
-1. Sur la page **Sélectionner une étendue**, cochez la case **WS-VM1** et sélectionnez **Appliquer**.
-1. Sur la page **Créer une règle de collecte de données**, sélectionnez **Suivant**.
-1. Sur la page **Collecter et livrer**, sélectionnez **Ajouter une source de données**.
-1. Sur la page **Ajouter une source de données**, sélectionnez **Journaux des événements Windows**. Dans la catégorie Application, activez les catégories **Critique** et **Erreur**. Dans la catégorie **Sécurité**, choisissez la catégorie **Échec d’audit**. Dans la catégorie **Système**, activez les catégories **Critique** et **Erreur**. 
+5. Dans la page **Ressources**, cliquez sur ** Ajouter des ressources**.
+1. Dans la page **Sélectionner une étendue**, cochez la case **WS-VM1**, puis sélectionnez **Appliquer**.
+1. Dans la page **Créer une règle de collecte de données**, sélectionnez **Suivant**.
+1. Dans la page **Collecter et livrer**, sélectionnez **Ajouter une source de données**.
+1. Dans la page **Ajouter une source de données**, sélectionnez **Journaux des événements Windows**. Dans la catégorie **Application**, cochez les catégories **Critique** et **Erreur**. Dans la catégorie **Sécurité**, sélectionnez la catégorie **Échec d’audit**. Dans la catégorie **Système**, cochez les catégories **Critique** et **Erreur**. 
 1. Sélectionnez **Suivant**.
-1. Dans la page **Destination**, configurez les paramètres suivants :
+1. Dans la page **Destination**, définissez les paramètres suivants :
 
     | Propriété | Valeur    |
     |:---------|:---------|
@@ -60,19 +60,19 @@ lab:
     | Compte ou espace de noms  | LogAnalytics1  |
 
 12. Sélectionnez **Ajouter une source de données**.
-1. Sélectionnez **Vérifier + Créer**, puis **Créer**.
+1. Sélectionnez **Examiner et créer**, puis **Créer**.
 
 
 ### Ajouter une collection de journaux IIS à une règle de collecte de données existante
 
-1. Dans la barre de recherche du Portail Azure, saisissez **Moniteur**, puis sélectionnez **Moniteur** dans la liste de résultats.
-1. Sur la page **Moniteur**, sous **Paramètres**, sélectionnez **Règles de collecte de données**.
+1. Dans la barre de recherche du portail Azure, tapez **Moniteur**, puis sélectionnez **Moniteur** dans la liste des résultats.
+1. Dans la page **Moniteur**, sous **Paramètres**, sélectionnez **Règles de collecte de données**.
 1. Choisissez la règle **WinVMDRC** dans rg-alpha.
-1. Sous **Configuration**, choisissez **Sources de données**.
-1. Sur la page **Sources de données**, sélectionnez **Ajouter**.
-1. Sur la page **Ajouter une source de données**, sélectionnez **Journaux IIS**.
+1. Sous **Configuration**, sélectionnez **Sources de données**.
+1. Dans la page **Sources de données**, sélectionnez **Ajouter**.
+1. Dans la page **Ajouter une source de données**, sélectionnez **Journaux IIS**.
 1. Sélectionnez **Suivant**.
-1. Dans la page **Destination**, configurez les paramètres suivants :
+1. Dans la page **Destination**, définissez les paramètres suivants :
 
     | Propriété | Valeur    |
     |:---------|:---------|
@@ -84,10 +84,10 @@ lab:
 
 ### Configurer le moniteur de connexion de réseau pour une machine virtuelle IaaS Linux
 
-1. Dans la barre de recherche du Portail Azure, saisissez **Network Watcher**, puis sélectionnez **Network Watcher** dans la liste de résultats.
-1. Sous **Supervision**, sélectionnez **Moniteur de connexion**.
-1. Sur la page **Moniteur de connexion**, sélectionnez **Créer**.
-1. Sur la page **Informations de base** de l’Assistant de création de moniteur de connexion, saisissez les informations suivantes, puis sélectionnez **Suivant**.
+1. Dans la barre de recherche du portail Azure, entrez **Network Watcher** et sélectionnez **Network Watcher** dans la liste des résultats.
+1. Sous **Surveillance**, sélectionnez **Moniteur de connexion**.
+1. Dans la page **Moniteur de connexion**, sélectionnez **Créer**.
+1. Dans la page **Informations de base** de l’Assistant **Créer un moniteur de connexion**, indiquez les informations suivantes, puis cliquez sur **Suivant**.
 
     | Propriété | Valeur    |
     |:---------|:---------|
@@ -96,10 +96,10 @@ lab:
     | Région    | USA Est  |
     | Espace de travail | LogAnalytics1  |
 
-5. Sur la page **Ajouter des détails du groupe de test**, saisissez le nom **LinuxIPTest** et sélectionnez **Ajouter des sources**.
-1. Sur la page **Ajouter des sources**, sélectionnez **Points de terminaison** Azure et configurez le type sur **Machines virtuelles**. Sélectionnez **Sous-réseau**, puis cochez la case **Linux-VM**. Sélectionnez **Ajouter des points de terminaison**.
+5. Dans la page **Ajouter les détails du groupe de tests**, entrez le nom **LinuxIPTest** et sélectionnez **Ajouter des sources**.
+1. Dans la page **Ajouter des sources**, sélectionnez **Points de terminaison Azure** et définissez le type sur **Machines virtuelles**. Sélectionnez **Sous-réseau**, puis cochez la case **Linux-VM**. Sélectionnez **Ajouter des points de terminaison**.
 1. Sélectionnez **Ajouter une configuration de test**. 
-1. Sur la page **Ajouter une configuration de test**, saisissez le nom **DefaultHTTP** et sélectionnez **Ajouter une configuration de test**.
-1. Sélectionnez **Ajouter des destinations**. Sélectionnez **Points de terminaison Azure** et configurez le type sur **Machines virtuelles**. Sélectionnez **Sous-réseau**, puis cochez la case **WS-VM1**. Sélectionnez **Ajouter des points de terminaison**.
-1. Sélectionnez **Ajouter un groupe de test**.
-1. Sélectionnez **Vérifier + Créer**, puis **Créer**.
+1. Dans la page **Ajouter une configuration de test**, entrez le nom **DefaultHTTP**, puis sélectionnez **Ajouter une configuration de test**.
+1. Sélectionnez **Ajouter des destinations**. Sélectionnez **Points de terminaison Azure** et définissez le type sur **Machines virtuelles**. Sélectionnez **Sous-réseau**, puis cochez la case **WS-VM1**. Sélectionnez **Ajouter des points de terminaison**.
+1. Choisissez **Ajouter un groupe de tests**.
+1. Sélectionnez **Examiner et créer**, puis **Créer**.
