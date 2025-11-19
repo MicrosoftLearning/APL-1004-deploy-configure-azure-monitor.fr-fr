@@ -93,7 +93,7 @@ lab:
     |:---------|:---------|
     | Nom du moniteur de connexion  | LinuxVMPubIP   |
     | Abonnement  | Votre abonnement   |
-    | Région    | USA Est  |
+    | Région    | USA Est 2 |
     | Espace de travail | LogAnalytics1  |
 
 5. Dans la page **Ajouter les détails du groupe de tests**, entrez le nom **LinuxIPTest** et sélectionnez **Ajouter des sources**.
