@@ -46,7 +46,7 @@ Dans cet exercice, vous allez déployer et configurer une machine virtuelle Wind
     | Groupe de ressources    | rg-alpha  |
     | Nom de la machine virtuelle  | WS-VM1   |
     | Région    | USA Est  |
-    | Options de disponibilité  | Aucune redondance de l’infrastructure requise  |
+    | Options de disponibilité  | Aucune redondance d’infrastructure requise  |
     | Type de sécurité | standard   |
     | Image | Centre de données Windows Server 2022 - Édition Azure - x64 Gen2  |
     | Architecture de machine virtuelle   | x64  |
@@ -68,12 +68,12 @@ Dans cet exercice, vous allez déployer et configurer une machine virtuelle Wind
 
     | Propriété | Valeur    |
     |:---------|:---------|
-    | Source  | Aucune  |
+    | Source  | Quelconque  |
     | Source port ranges    | *   |
     | Destination  | Quelconque   |
     | Service   | HTTP  |
     | Action    | Autoriser  |
-    | Priorité  | 310   |
+    | Priority  | 310   |
     | Nom  | AllowAnyHTTPInbound  |
 
 11. Dans la page **WS-VM1**, cliquez sur **Se connecter**.
@@ -104,7 +104,7 @@ Dans cet exercice, vous allez déployer et configurer une machine virtuelle Linu
     | Groupe de ressources    | rg-alpha  |
     | Nom de la machine virtuelle  | Linux-VM2   |
     | Région    | USA Est  |
-    | Options de disponibilité  | Aucune redondance de l’infrastructure requise  |
+    | Options de disponibilité  | Aucune redondance d’infrastructure requise  |
     | Type de sécurité | standard   |
     | Image | Ubuntu Server 20.04 LTs - x64 Gen2  |
     | Architecture de machine virtuelle   | x64  |
@@ -112,12 +112,14 @@ Dans cet exercice, vous allez déployer et configurer une machine virtuelle Linu
     | Type d’authentification   | Mot de passe  |
     | Nom d’utilisateur  | Prime   |
     | Mot de passe  | [Sélectionner un mot de passe sécurisé unique] P@ssw0rdP@ssw0rd   |
-    | Aucun port d’entrée public  | Aucun   |
+    | Ports d’entrée publics  | Aucun(e)   |
 
 4. Vérifiez les informations, puis sélectionnez **Créer**.
 1. Une fois la machine virtuelle déployée, ouvrez la page des **propriétés de la machine virtuelle** et sélectionnez **Extensions + applications** sous **Paramètres**.
 1. Cliquez sur **Ajouter** et sélectionnez l’**Agent Network Watcher pour Linux**. Cliquez sur **Suivant** et sélectionnez **Examiner et créer**. Cliquez sur **Créer**.
-1. Configurez les extensions AzureNetworkWatcherExtension et OmsAgentForLinux afin qu’elles soient automatiquement mises à niveau.
+
+> [!NOTE]
+> L’installation et la configuration de l’extension OmsAgentForLinux seront effectuées dans l’exercice 2 après la création de l’espace de travail Log Analytics.
 
 
 ## Déployer une application web avec une base de données SQL

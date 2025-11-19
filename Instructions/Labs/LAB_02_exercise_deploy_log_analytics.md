@@ -6,13 +6,13 @@ lab:
 
 ## Tâches d'apprentissage
 
-- Créer un espace de travail Log Analytics
+- Créez un espace de travail Log Analytics
 - Configurer la conservation des données Log Analytics et des stratégies d’archives
 - Activer l’accès à un espace de travail Log Analytics
 
 ## Instructions de l’exercice
 
-### Créer un espace de travail Log Analytics
+### Créez un espace de travail Log Analytics
 
 1. Dans la barre de recherche du Portail Azure, saisissez **Log Analytics**, puis sélectionnez **Log Analytics** dans la liste de résultats.
 1. Sur la page **Espaces de travail Log Analytics**, sélectionnez **Créer**.
@@ -26,6 +26,20 @@ lab:
     | Région    | USA Est  |
 
 4. Vérifiez les informations, puis sélectionnez **Créer**.
+
+### Installez et configurez l’agent Log Analytics sur Linux-VM2
+
+1. Dans la barre de recherche du portail Azure, tapez **machines virtuelles**, puis sélectionnez **Machines virtuelles** dans les résultats de la recherche.
+1. Sur la page **Machines virtuelles**, sélectionnez **Linux-VM2**.
+1. Sur la page **Linux-VM2**, choisissez **Extensions + Applications** sous **Paramètres**.
+1. Choisissez **Ajouter** et sélectionnez l’**agent Log Analytics pour Linux** (également appelé OmsAgentForLinux). Sélectionnez **Suivant**.
+1. Pour l’ID d’espace de travail et la clé d’espace de travail, accédez à **LogAnalytics1 > Paramètres > Assistants** dans un onglet ou une autre fenêtre du navigateur.
+1. Copiez l’**ID d’espace de travail** et la **clé primaire** depuis l’espace de travail LogAnalytics1.
+1. Revenez à la page d’installation de l’extension Linux-VM2 et collez l’ID d’espace de travail et la clé d’espace de travail. Choisissez **Passer en revue et créer**, puis **Créer**.
+1. Une fois l’installation terminée, sur la page **Extensions + applications Linux-VM2**, sélectionnez **AzureNetworkWatcherExtension**.
+1. Sur la page des détails de l’extension, assurez-vous que **Activer la mise à niveau automatique** est défini sur **Oui**. Sinon, activez l’option et choisissez **Enregistrer**.
+1. Revenez à la page **Extensions + Applications** et sélectionnez l’extension **OmsAgentForLinux**.
+1. Sur la page des détails de l’extension, assurez-vous que **Activer la mise à niveau automatique** est défini sur **Oui**. Sinon, activez l’option et choisissez **Enregistrer**.
 
 ### Configurer la conservation des données Log Analytics et des stratégies d’archives
 
